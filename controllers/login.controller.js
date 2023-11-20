@@ -21,7 +21,7 @@ class LoginController {
           );
           res.json({ accessToken });
         } else {
-          res.sendStatus(401);
+          res.sendStatus(400);
         }
       })
       .catch(() => res.sendStatus(401));
