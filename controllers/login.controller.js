@@ -24,7 +24,7 @@ class LoginController {
           res.sendStatus(400);
         }
       })
-      .catch(() => res.sendStatus(401));
+      .catch(() => res.sendStatus(400));
   }
 
   // [GET] /user
